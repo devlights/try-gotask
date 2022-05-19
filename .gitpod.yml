@@ -2,7 +2,7 @@ image: gitpod/workspace-go:latest
 
 tasks:
   - name: install go-task
-    init: go install github.com/go-task/task/v3/cmd/task@latest
+    command: go install github.com/go-task/task/v3/cmd/task@latest
 
 vscode:
   extensions:
