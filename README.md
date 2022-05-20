@@ -32,3 +32,21 @@ Windowsの場合、デフォルトではmakeが存在しないので、makeを�
 以下にドキュメントを見ながら覚えていった内容をメモしておくことにする。
 
 ---
+
+## 最も大事なルール
+
+makeには ```Makefile``` のように、taskの場合は ```Taskfile.yml``` というファイルを使う。
+
+```Taskfile.yml``` は、例えば以下のようになる。
+
+```yaml
+version: '3'
+
+env:
+  MESSAGE: helloworld
+
+tasks:
+  default:
+    cmds:
+      - echo $MESSAGE
+```
