@@ -1,0 +1,9 @@
+version: '3'
+
+tasks:
+  default:
+    cmds:
+      - echo 'タスクを指定しない場合、このタスクが実行されます.'
+  hello:
+    cmds:
+      - echo 'hello world'

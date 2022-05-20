@@ -82,3 +82,4 @@ $ task -d /path/to/target task-name
 |----|----|----|
 |01.helloworld|[README](01.helloworld/README.md)|[Taskfile.yml](01.helloworld/Taskfile.yml)|
 |02.cli-options|[README](02.cli-options/README.md)||
+|03.default-task|[README](03.default-task/README.md)|[Taskfile.yml](03.default-task/Taskfile.yml)|
