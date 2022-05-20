@@ -54,3 +54,24 @@ tasks:
 ## Taskfile.yml の作り方
 
 ```task --init``` とすることで、カレントディレクトリに Taskfile.yml を初期生成してくれる。
+
+## 実行方法
+
+対象となる ```Taskfile.yml``` が存在するディレクトリに移動して
+
+```sh
+# デフォルトのタスクが実行される
+$ task
+
+# タスク指定
+$ task xxxx
+```
+
+とするか、ディレクトリは移動せずに
+
+```sh
+$ task -d /path/to/target
+$ task -d /path/to/target task-name
+```
+
+としても良い。
