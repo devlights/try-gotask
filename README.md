@@ -50,3 +50,7 @@ tasks:
     cmds:
       - echo $MESSAGE
 ```
+
+## Taskfile.yml の作り方
+
+```task --init``` とすることで、カレントディレクトリに Taskfile.yml を初期生成してくれる。
