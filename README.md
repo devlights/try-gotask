@@ -75,3 +75,9 @@ $ task -d /path/to/target task-name
 ```
 
 としても良い。
+
+### リスト
+
+|directory|readme|taskfile|
+|----|----|----|
+|01.helloworld|[README](01.helloworld/README.md)|[Taskfile.yml](01.helloworld/Taskfile.yml)|
