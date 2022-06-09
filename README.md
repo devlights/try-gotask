@@ -35,7 +35,7 @@ Windowsの場合、デフォルトではmakeが存在しないので、makeを�
 
 ## 最も大事なルール
 
-makeには ```Makefile``` のように、taskの場合は ```Taskfile.yml``` というファイルを使う。
+makeには ```Makefile``` のように、taskの場合は ```Taskfile.yml```(```Taskfile.yaml```) というファイルを使う。
 
 ```Taskfile.yml``` は、例えば以下のようになる。
 
@@ -53,7 +53,9 @@ tasks:
 
 ## Taskfile.yml の作り方
 
-```task --init``` とすることで、カレントディレクトリに Taskfile.yml を初期生成してくれる。
+```task --init``` とすることで、カレントディレクトリに ```Taskfile.yml``` を初期生成してくれる。
+
+(*) 本家のドキュメントには ```Taskfile.yml``` って名前のファイルを使えとなっているがコマンドラインで生成されるものは ```Taskfile.yaml``` になる。
 
 ## 実行方法
 
