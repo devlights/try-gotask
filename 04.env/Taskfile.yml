@@ -1,0 +1,15 @@
+version: "3"
+
+env:
+  MYVARGLOBAL: myvar-global
+  MYVARDUP: myvar-global
+
+tasks:
+  default:
+    cmds:
+      - echo $MYVAR
+      - echo $MYVARGLOBAL
+      - echo $MYVARDUP
+    env:
+      MYVAR: myvar-local
+      MYVARDUP: myvar-local
