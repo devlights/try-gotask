@@ -168,6 +168,8 @@ value3
 
 取込むには、トップレベルで ```includes:``` を指定する。
 
+存在しない場合でも処理を止めたくない場合は、```optional: true``` を指定する。
+
 ### ファイル階層
 
 ```sh
@@ -215,6 +217,9 @@ version: "3"
 includes:
   other1: ./other
   other2: ./other2/othertaskfile.yml
+  other3:
+    taskfile: ./other3/Taskfile.yml
+    optional: true
 
 tasks:
   default:

@@ -3,6 +3,9 @@ version: "3"
 includes:
   other1: ./other
   other2: ./other2/othertaskfile.yml
+  other3:
+    taskfile: ./other3/Taskfile.yml
+    optional: true
 
 tasks:
   default:
