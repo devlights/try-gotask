@@ -1,0 +1,10 @@
+version: "3"
+
+dotenv: ["my.env", "my2.env"]
+
+tasks:
+  default:
+    cmds:
+      - echo $MYVAR1
+      - echo $MYVAR2
+      - echo $MYVAR3

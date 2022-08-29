@@ -2,6 +2,14 @@
 
 このリポジトリには、[Task](https://github.com/go-task/task) についての自分用のメモが置いてあります。
 
+## ToC
+
+- [Task (go-task) とは](#task-go-task-とは)
+- [最も大事なルール](#最も大事なルール)
+- [Taskfile.yml の作り方](#taskfileyml-の作り方)
+- [実行方法](#実行方法)
+- [環境変数 (env, dotenv)](#環境変数-env-dotenv)
+
 ## Task (go-task) とは
 
 [Task(go-task)](https://github.com/go-task/task) とは、make のような タスクランナーでありビルドツール。
@@ -78,6 +86,81 @@ $ task -d /path/to/target task-name
 
 としても良い。
 
+## 環境変数 (env, dotenv)
+
+タスク単位で環境変数を指定することが出来る。
+
+```yaml
+version: "3"
+
+env:
+  MYVARGLOBAL: myvar-global
+  MYVARDUP: myvar-global
+
+tasks:
+  default:
+    cmds:
+      - echo $MYVAR
+      - echo $MYVARGLOBAL
+      - echo $MYVARDUP
+    env:
+      MYVAR: myvar-local
+      MYVARDUP: myvar-local
+
+```
+
+```sh
+$ task -d 04.env/
+task: [default] echo $MYVAR
+myvar-local
+task: [default] echo $MYVARGLOBAL
+myvar-global
+task: [default] echo $MYVARDUP
+myvar-local
+```
+
+また、```.env``` などを指定することも出来る。この場合は ```dotenv:``` を用いる。
+
+### my.env
+
+```yaml
+MYVAR1=value1
+MYVAR2=value2
+```
+
+### my2.env
+
+```yaml
+MYVAR2=value2-2
+MYVAR3=value3
+```
+
+### Taskfile.yml
+
+```yaml
+version: "3"
+
+dotenv: ["my.env", "my2.env"]
+
+tasks:
+  default:
+    cmds:
+      - echo $MYVAR1
+      - echo $MYVAR2
+      - echo $MYVAR3
+
+```
+
+```sh
+$ task -d 05.dotenv/
+task: [default] echo $MYVAR1
+value1
+task: [default] echo $MYVAR2
+value2
+task: [default] echo $MYVAR3
+value3
+```
+
 ### リスト
 
 |directory|readme|taskfile|
@@ -85,3 +168,5 @@ $ task -d /path/to/target task-name
 |01.helloworld|[README](01.helloworld/README.md)|[Taskfile.yml](01.helloworld/Taskfile.yml)|
 |02.cli-options|[README](02.cli-options/README.md)||
 |03.default-task|[README](03.default-task/README.md)|[Taskfile.yml](03.default-task/Taskfile.yml)|
+|04.env||[Taskfile.yml](04.env/Taskfile.yml)|
+|05.dotenv||[Taskfile.yml](05.dotenv/Taskfile.yml)|
