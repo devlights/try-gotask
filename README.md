@@ -166,6 +166,72 @@ value3
 
 他のタスクファイルを取込み（include）することが可能。
 
+取込むには、トップレベルで ```includes:``` を指定する。
+
+### ファイル階層
+
+```sh
+$ tree 06.include/
+06.include/
+├── other
+│   └── Taskfile.yml
+├── other2
+│   └── othertaskfile.yml
+└── Taskfile.yml
+
+2 directories, 3 files
+```
+
+
+### other/Taskfile.yml
+
+```yaml
+version: "3"
+
+tasks:
+  task:
+    cmds:
+      - echo 'task1'
+
+```
+
+### other2/othertaskfile.yml
+
+```yaml
+version: "3"
+
+tasks:
+  task:
+    cmds:
+      - echo 'task2'
+
+```
+
+### Taskfile.yml
+
+```yaml
+version: "3"
+
+includes:
+  other1: ./other
+  other2: ./other2/othertaskfile.yml
+
+tasks:
+  default:
+    cmds:
+      - task: other1:task
+      - task: other2:task
+
+```
+
+```sh
+$ task -d 06.include/
+task: [other1:task] echo 'task1'
+task1
+task: [other2:task] echo 'task2'
+task2
+```
+
 ### リスト
 
 |directory|readme|taskfile|
