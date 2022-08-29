@@ -9,6 +9,7 @@
 - [Taskfile.yml の作り方](#taskfileyml-の作り方)
 - [実行方法](#実行方法)
 - [環境変数 (env, dotenv)](#環境変数-env-dotenv)
+- [他のタスクファイルを取込み](#他のタスクファイルを取込み)
 
 ## Task (go-task) とは
 
@@ -160,6 +161,10 @@ value2
 task: [default] echo $MYVAR3
 value3
 ```
+
+## 他のタスクファイルを取込み
+
+他のタスクファイルを取込み（include）することが可能。
 
 ### リスト
 
