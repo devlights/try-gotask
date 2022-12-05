@@ -246,3 +246,4 @@ task2
 |03.default-task|[README](03.default-task/README.md)|[Taskfile.yml](03.default-task/Taskfile.yml)|
 |04.env||[Taskfile.yml](04.env/Taskfile.yml)|
 |05.dotenv||[Taskfile.yml](05.dotenv/Taskfile.yml)|
+|06.include||[Taskfile.yml](06.include/Taskfile.yml)|
