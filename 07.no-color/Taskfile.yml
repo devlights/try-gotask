@@ -1,0 +1,6 @@
+version: "3"
+
+tasks:
+  default:
+    cmds: 
+      - echo 'カラー出力を止める場合は -c=0 or --color=0 or NO_COLOR=0 を指定します'
