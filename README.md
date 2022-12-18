@@ -247,3 +247,5 @@ task2
 |04.env||[Taskfile.yml](04.env/Taskfile.yml)|
 |05.dotenv||[Taskfile.yml](05.dotenv/Taskfile.yml)|
 |06.include||[Taskfile.yml](06.include/Taskfile.yml)|
+|07.no-color||[Taskfile.yml](07.no-color/Taskfile.yml)|
+|08.silent||[Taskfile.yml](08.silent/Taskfile.yml)|
