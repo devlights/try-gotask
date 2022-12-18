@@ -1,0 +1,17 @@
+version: "3"
+
+tasks:
+  default:
+    cmds:
+      - task: no-silent
+      - task: with-silent
+  no-silent:
+    cmds:
+      - ls -l
+      - echo '--------------------------'
+  with-silent:
+    cmds:
+      - cmd: ls -l
+        silent: true
+      - cmd: echo '--------------------------'
+        silent: true
