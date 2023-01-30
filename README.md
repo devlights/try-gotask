@@ -249,3 +249,5 @@ task2
 |06.include||[Taskfile.yml](06.include/Taskfile.yml)|
 |07.no-color|[README](07.no-color/README.md)|[Taskfile.yml](07.no-color/Taskfile.yml)|
 |08.silent|[README](08.silent/README.md)|[Taskfile.yml](08.silent/Taskfile.yml)|
+|09.os-specific||[Taskfile.yml](09.os-specific/Taskfile.yml)|
+|10.variable||[Taskfile.yml](10.variable/Taskfile.yml)|
