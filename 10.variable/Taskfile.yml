@@ -1,0 +1,18 @@
+# https://taskfile.dev/usage/#variables
+version: '3'
+
+# グローバル変数
+vars:
+  MESSAGE1: message1
+  MESSAGE2: message2
+
+tasks:
+  default:
+    cmds:
+      - cmd: echo {{ .MESSAGE1 }}
+        silent: true
+      - cmd: echo {{ .MESSAGE2 }}
+        silent: true
+    # ローカル変数（グローバルに同じ変数が定義されている場合、ローカルが優先される)
+    vars:
+      MESSAGE2: MESSAGE-2-UPDATED
