@@ -1,0 +1,8 @@
+# https://taskfile.dev/usage/#forwarding-cli-arguments-to-commands
+version: "3"
+
+tasks:
+  default:
+    cmds:
+      - echo {{ .CLI_ARGS }}
+
