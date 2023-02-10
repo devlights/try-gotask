@@ -252,3 +252,4 @@ task2
 |09.os-specific||[Taskfile.yml](09.os-specific/Taskfile.yml)|
 |10.variable||[Taskfile.yml](10.variable/Taskfile.yml)|
 |11.cliargs|[README](11.cliargs/README.md)|[Taskfile.yml](11.cliargs/Taskfile.yml)|
+|12.defer|[README](12.defer/README.md)|[Taskfile.yml](12.defer/Taskfile.yml)|

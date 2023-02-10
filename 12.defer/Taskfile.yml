@@ -1,0 +1,25 @@
+# https://taskfile.dev/usage/#doing-task-cleanup-with-defer
+version: "3"
+
+vars:
+  DIR: testdir
+
+tasks:
+  helloworld:
+    cmds:
+      - echo hello
+      - defer: echo hehehe # この呼出はGoのdeferと同様にフローが最後まで行った後に呼び出される
+      - echo world
+  run:
+    cmds:
+      - mkdir -p {{.DIR}}
+      - defer: rm -rf {{.DIR}} # この呼出はGoのdeferと同様にフローが最後まで行った後に呼び出される
+      - echo helloworld
+  run2:
+    cmds:
+      - mkdir -p {{.DIR}}
+      - defer: { task: clean } # タスクを指定することも出来る
+      - echo helloworld2
+  clean:
+    cmds:
+      - rm -rf {{.DIR}}
