@@ -251,3 +251,4 @@ task2
 |08.silent|[README](08.silent/README.md)|[Taskfile.yml](08.silent/Taskfile.yml)|
 |09.os-specific||[Taskfile.yml](09.os-specific/Taskfile.yml)|
 |10.variable||[Taskfile.yml](10.variable/Taskfile.yml)|
+|11.cliargs|[README](11.cliargs/README.md)|[Taskfile.yml](11.cliargs/Taskfile.yml)|
