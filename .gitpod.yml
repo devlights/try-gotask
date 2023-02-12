@@ -1,6 +1,8 @@
 image: gitpod/workspace-go:latest
 
 tasks:
+  - name: install tree command
+    command: sudo apt-get update && sudo apt-get install tree
   - name: install go-task
     command: go install github.com/go-task/task/v3/cmd/task@latest
 
