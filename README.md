@@ -2,14 +2,24 @@
 
 このリポジトリには、[Task](https://github.com/go-task/task) についての自分用のメモが置いてあります。
 
-## ToC
+## リスト
 
-- [Task (go-task) とは](#task-go-task-とは)
-- [最も大事なルール](#最も大事なルール)
-- [Taskfile.yml の作り方](#taskfileyml-の作り方)
-- [実行方法](#実行方法)
-- [環境変数 (env, dotenv)](#環境変数-env-dotenv)
-- [他のタスクファイルを取込み](#他のタスクファイルを取込み)
+|directory|readme|taskfile|
+|----|----|----|
+|01.helloworld|[README](01.helloworld/README.md)|[Taskfile.yml](01.helloworld/Taskfile.yml)|
+|02.cli-options|[README](02.cli-options/README.md)||
+|03.default-task|[README](03.default-task/README.md)|[Taskfile.yml](03.default-task/Taskfile.yml)|
+|04.env||[Taskfile.yml](04.env/Taskfile.yml)|
+|05.dotenv||[Taskfile.yml](05.dotenv/Taskfile.yml)|
+|06.include||[Taskfile.yml](06.include/Taskfile.yml)|
+|07.no-color|[README](07.no-color/README.md)|[Taskfile.yml](07.no-color/Taskfile.yml)|
+|08.silent|[README](08.silent/README.md)|[Taskfile.yml](08.silent/Taskfile.yml)|
+|09.os-specific||[Taskfile.yml](09.os-specific/Taskfile.yml)|
+|10.variable||[Taskfile.yml](10.variable/Taskfile.yml)|
+|11.cliargs|[README](11.cliargs/README.md)|[Taskfile.yml](11.cliargs/Taskfile.yml)|
+|12.defer|[README](12.defer/README.md)|[Taskfile.yml](12.defer/Taskfile.yml)|
+|13.internal-task|[README](13.internal-task/README.md)|[Taskfile.yml](13.internal-task/Taskfile.yml)|
+
 
 ## Task (go-task) とは
 
@@ -236,20 +246,3 @@ task1
 task: [other2:task] echo 'task2'
 task2
 ```
-
-### リスト
-
-|directory|readme|taskfile|
-|----|----|----|
-|01.helloworld|[README](01.helloworld/README.md)|[Taskfile.yml](01.helloworld/Taskfile.yml)|
-|02.cli-options|[README](02.cli-options/README.md)||
-|03.default-task|[README](03.default-task/README.md)|[Taskfile.yml](03.default-task/Taskfile.yml)|
-|04.env||[Taskfile.yml](04.env/Taskfile.yml)|
-|05.dotenv||[Taskfile.yml](05.dotenv/Taskfile.yml)|
-|06.include||[Taskfile.yml](06.include/Taskfile.yml)|
-|07.no-color|[README](07.no-color/README.md)|[Taskfile.yml](07.no-color/Taskfile.yml)|
-|08.silent|[README](08.silent/README.md)|[Taskfile.yml](08.silent/Taskfile.yml)|
-|09.os-specific||[Taskfile.yml](09.os-specific/Taskfile.yml)|
-|10.variable||[Taskfile.yml](10.variable/Taskfile.yml)|
-|11.cliargs|[README](11.cliargs/README.md)|[Taskfile.yml](11.cliargs/Taskfile.yml)|
-|12.defer|[README](12.defer/README.md)|[Taskfile.yml](12.defer/Taskfile.yml)|
