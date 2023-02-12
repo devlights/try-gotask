@@ -1,0 +1,24 @@
+# https://taskfile.dev/usage/#internal-tasks
+version: "3"
+
+tasks:
+  default:
+    desc: デフォルトタスク
+    cmds:
+      - task: run
+  run:
+    desc: 処理を実行
+    cmds:
+      - task: _hr
+      - task: _run
+      - task: _hr
+  _run:
+    desc: 処理を実行（内部）
+    internal: true
+    cmds:
+      - lsb_release -a
+  _hr:
+    internal: true
+    cmds:
+      - cmd: echo '------------------------------------'
+        silent: true
