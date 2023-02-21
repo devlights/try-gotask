@@ -1,0 +1,37 @@
+version: "3"
+
+shopt:
+  - "globstar" # グローバルな設定
+
+tasks:
+  default:
+    - task: clean
+    - task: init
+    - task: run-no-shopt
+    - task: run-with-shopt
+  clean:
+    internal: true
+    cmds:
+      - rm -rf a
+  init:
+    internal: true
+    cmds:
+      - mkdir -p a/b/c
+      - echo 'hello' > a/hello.txt
+      - echo 'world' > a/b/c/world.txt
+  run:
+    internal: true
+    cmds:
+      - cmd: ls **/*.txt
+  run-no-shopt:
+    internal: true
+    cmds:
+      - cmd: ls **/*.txt
+        shopt:
+          - "-u globstar" # コマンド毎の設定
+  run-with-shopt:
+    internal: true
+    cmds:
+      - cmd: ls **/*.txt
+        shopt:
+          - "-s globstar" # コマンド毎の設定
