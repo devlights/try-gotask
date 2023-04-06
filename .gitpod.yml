@@ -1,10 +1,10 @@
-image: gitpod/workspace-go:latest
+image:
+  file: .gitpod.Dockerfile
 
 tasks:
-  - name: install tree command
-    command: sudo apt-get update -q && sudo apt-get install -yq tree && sudo apt-get clean
-  - name: install go-task
-    command: go install github.com/go-task/task/v3/cmd/task@latest
+  - name: initial
+    init: go install github.com/go-task/task/v3/cmd/task@latest
+    command: go version
 
 vscode:
   extensions:
