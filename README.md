@@ -19,6 +19,10 @@
 |11.cliargs|[README](11.cliargs/README.md)|[Taskfile.yml](11.cliargs/Taskfile.yml)|
 |12.defer|[README](12.defer/README.md)|[Taskfile.yml](12.defer/Taskfile.yml)|
 |13.internal-task|[README](13.internal-task/README.md)|[Taskfile.yml](13.internal-task/Taskfile.yml)|
+|14.shopt|[README](14.shopt/README.md)|[Taskfile.yml](14.shopt/Taskfile.yml)|
+|15.single-command-task|[README](15.single-command-task/README.md)|[Taskfile.yml](15.single-command-task/Taskfile.yml)|
+|16.prompt|[README](16.prompt/README.md)|[Taskfile.yml](16.prompt/Taskfile.yml)|
+|17.dryrun|[README](17.dryrun/README.md)|[Taskfile.yml](17.dryrun/Taskfile.yml)|
 
 
 ## Task (go-task) とは
