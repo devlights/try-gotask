@@ -1,0 +1,13 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+  GREETING: hello world
+
+tasks:
+  default:
+    prompt: 実行します。よろしいですか？
+    cmds:
+      - echo "{{.GREETING}}"
+    silent: true
