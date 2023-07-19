@@ -23,6 +23,7 @@
 |15.single-command-task|[README](15.single-command-task/README.md)|[Taskfile.yml](15.single-command-task/Taskfile.yml)|
 |16.prompt|[README](16.prompt/README.md)|[Taskfile.yml](16.prompt/Taskfile.yml)|
 |17.dryrun|[README](17.dryrun/README.md)|[Taskfile.yml](17.dryrun/Taskfile.yml)|
+|18.preconditions|[README](18.preconditions/README.md)|[Taskfile.yml](18.preconditions/Taskfile.yml)|
 
 
 ## Task (go-task) とは
