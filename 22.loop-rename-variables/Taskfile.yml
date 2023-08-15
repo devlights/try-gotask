@@ -1,0 +1,13 @@
+# https://taskfile.dev
+
+version: "3"
+
+tasks:
+  default:
+    vars:
+      ymlFiles:
+        sh: find ../ -type f -name 'Taskfile.yml' | sed -e 's;../;;'
+    cmds:
+      - for: { var: ymlFiles, as: YML_FILE }
+        cmd: echo {{ .YML_FILE }}
+    silent: true
