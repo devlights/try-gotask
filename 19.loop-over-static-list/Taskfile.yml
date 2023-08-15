@@ -1,0 +1,13 @@
+# https://taskfile.dev
+
+version: "3"
+
+tasks:
+  default:
+    cmds:
+      #
+      # 固定の情報をループ
+      #
+      - for: ["one", "two", "three"]
+        # ループ中の項目は .ITEM で参照できる
+        cmd: echo {{ .ITEM }}
