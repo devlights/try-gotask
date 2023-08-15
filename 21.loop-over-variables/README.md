@@ -24,13 +24,14 @@ version: "3"
 
 silent: true
 
+vars:
+  VAL1: Hello World
+  VAL2: HELLO,WORLD
+  VAL3:
+    sh: find ../ -name '*.yml' -type f
+
 tasks:
   default:
-    vars:
-      VAL1: Hello World
-      VAL2: HELLO,WORLD
-      VAL3:
-        sh: find ../ -name '*.yml' -type f
     cmds:
       - task: use-val1
       - cmd: echo '--------------------------------------'
@@ -49,7 +50,6 @@ tasks:
     cmds:
       - for: { var: VAL3 }
         cmd: wc -l {{ .ITEM }}
-    silent: true
 
 ```
 
