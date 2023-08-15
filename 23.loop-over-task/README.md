@@ -76,4 +76,4 @@ task: [wc] wc 'Taskfile.yml'
 
 ## 参考情報
 
-- [Renaming variables](https://taskfile.dev/usage/#renaming-variables)
+- [Looping over tasks](https://taskfile.dev/usage/#looping-over-tasks)
