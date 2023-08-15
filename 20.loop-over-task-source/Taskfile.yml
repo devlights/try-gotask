@@ -1,0 +1,16 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  default:
+    deps: [clear-checksums]
+    sources:
+      - ./*.txt
+      - ./*.go
+    cmds:
+      - for: sources
+        cmd: stat {{ .ITEM }} | head -n 3
+  clear-checksums:
+    cmds:
+      - rm -rf ./.task
