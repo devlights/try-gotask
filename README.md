@@ -26,6 +26,7 @@
 |18.preconditions|[README](18.preconditions/README.md)|[Taskfile.yml](18.preconditions/Taskfile.yml)|
 |19.loop-over-static-list|[README](19.loop-over-static-list/README.md)|[Taskfile.yml](19.loop-over-static-list/Taskfile.yml)|
 |20.loop-over-task-source|[README](20.loop-over-task-source/README.md)|[Taskfile.yml](20.loop-over-task-source/Taskfile.yml)|
+|21.loop-over-variables|[README](21.loop-over-variables/README.md)|[Taskfile.yml](21.loop-over-variables/Taskfile.yml)|
 
 
 ## Task (go-task) とは
