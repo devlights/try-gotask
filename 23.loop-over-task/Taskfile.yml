@@ -1,0 +1,37 @@
+# https://taskfile.dev
+
+version: "3"
+
+tasks:
+  default:
+    vars:
+      FILES:
+        sh: ls -1
+    cmds:
+      - for: { var: FILES }
+        task: proc
+        vars:
+          FILE: "{{ .ITEM }}"
+  proc:
+    internal: true
+    cmds:
+      - task: echo
+        vars:
+          TARGET: "{{ .FILE }}"
+      - task: wc
+        vars:
+          TARGET: "{{ .FILE }}"
+      - task: hr
+  echo:
+    internal: true
+    cmds:
+      - echo '{{ .TARGET }}'
+  wc:
+    internal: true
+    cmds:
+      - wc '{{ .TARGET }}'
+  hr:
+    internal: true
+    silent: true
+    cmds:
+      - echo '---------------------------------'
