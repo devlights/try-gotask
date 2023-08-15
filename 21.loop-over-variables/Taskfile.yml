@@ -1,0 +1,32 @@
+# https://taskfile.dev
+
+version: "3"
+
+silent: true
+
+tasks:
+  default:
+    vars:
+      VAL1: Hello World
+      VAL2: HELLO,WORLD
+      VAL3:
+        sh: find ../ -name '*.yml' -type f
+    cmds:
+      - task: use-val1
+      - cmd: echo '--------------------------------------'
+      - task: use-val2
+      - cmd: echo '--------------------------------------'
+      - task: use-val3
+  use-val1:
+    cmds:
+      - for: { var: VAL1 }
+        cmd: echo {{ .ITEM }}
+  use-val2:
+    cmds:
+      - for: { var: VAL2, split: "," }
+        cmd: echo {{ .ITEM }}
+  use-val3:
+    cmds:
+      - for: { var: VAL3 }
+        cmd: wc -l {{ .ITEM }}
+    silent: true
