@@ -24,6 +24,7 @@
 |16.prompt|[README](16.prompt/README.md)|[Taskfile.yml](16.prompt/Taskfile.yml)|
 |17.dryrun|[README](17.dryrun/README.md)|[Taskfile.yml](17.dryrun/Taskfile.yml)|
 |18.preconditions|[README](18.preconditions/README.md)|[Taskfile.yml](18.preconditions/Taskfile.yml)|
+|19.loop-over-static-list|[README](19.loop-over-static-list/README.md)|[Taskfile.yml](19.loop-over-static-list/Taskfile.yml)|
 
 
 ## Task (go-task) とは
