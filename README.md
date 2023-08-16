@@ -29,6 +29,7 @@
 |21.loop-over-variables|[README](21.loop-over-variables/README.md)|[Taskfile.yml](21.loop-over-variables/Taskfile.yml)|
 |22.loop-rename-variables|[README](22.loop-rename-variables/README.md)|[Taskfile.yml](22.loop-rename-variables/Taskfile.yml)|
 |23.loop-over-task|[README](23.loop-over-task/README.md)|[Taskfile.yml](23.loop-over-task/Taskfile.yml)|
+|24.prevent-same-build|[README](24.prevent-same-build/README.md)|[Taskfile.yml](24.prevent-same-build/Taskfile.yml)|
 
 
 ## Task (go-task) とは
