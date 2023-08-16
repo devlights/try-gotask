@@ -1,0 +1,22 @@
+# https://taskfile.dev
+
+version: "3"
+
+tasks:
+  default:
+    deps:
+      - build
+    cmds:
+      - ./app.exe
+  build:
+    cmds:
+      - go build -o app.exe main.go
+    sources:
+      - ./*.go
+    generates:
+      - app{{exeExt}}
+    method: timestamp
+  clean:
+    cmds:
+      - rm -rf .task/
+      - rm -f app.exe
