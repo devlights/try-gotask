@@ -1,0 +1,26 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  default:
+    cmds:
+      - task: run
+  build:
+    cmds:
+      - go build -o app{{exeExt}}
+    sources:
+      - ./*.go
+    generates:
+      - app{{exeExt}}
+    method: timestamp
+  run:
+    deps:
+      - build
+    cmds:
+      - ./app{{exeExt}}
+  clean:
+    cmds:
+      - cmd /c "del /F /Q app{{exeExt}}"
+      - cmd /c "rd /s /q .task"
+    ignore_error: true
