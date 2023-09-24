@@ -31,6 +31,7 @@
 |23.loop-over-task|[README](23.loop-over-task/README.md)|[Taskfile.yml](23.loop-over-task/Taskfile.yml)|
 |24.prevent-same-build|[README](24.prevent-same-build/README.md)|[Taskfile.yml](24.prevent-same-build/Taskfile.yml)|
 |25.run-cmd-on-windows|[README](25.run-cmd-on-windows/README.md)|[Taskfile.yml](25.run-cmd-on-windows/Taskfile.yml)|
+|26.global-taskfile|[README](26.global-taskfile/README.md)|[Taskfile.yml](26.global-taskfile/Taskfile.yml)|
 
 
 ## Task (go-task) とは
