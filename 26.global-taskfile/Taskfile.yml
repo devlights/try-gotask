@@ -1,0 +1,21 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  default:
+    cmds:
+      - echo "PWD=$(pwd)"
+      - echo "USER_WORKING_DIR={{.USER_WORKING_DIR}}"
+      - echo "HOME_DIR={{.HOME}}"
+    silent: true
+  to_global_taskfile:
+    cmds:
+      - cp ./Taskfile.yml "{{.HOME}}"
+      - ls -l "{{.HOME}}/Taskfile.yml"
+  rm_global_taskfile:
+    dir: "{{.HOME}}"
+    cmds:
+      - rm Taskfile.yml
+      - ls -l Taskfile.yml
+    ignore_error: true
