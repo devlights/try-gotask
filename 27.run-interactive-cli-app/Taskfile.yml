@@ -1,0 +1,13 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  default:
+    cmds:
+      - echo "{{.PWD}}"
+    silent: true
+  run-vim:
+    cmds:
+      - cmd: vim README.md
+    interactive: true
