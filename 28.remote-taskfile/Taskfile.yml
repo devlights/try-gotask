@@ -1,0 +1,19 @@
+# https://taskfile.dev
+
+version: '3'
+
+#
+# リモートのタスクファイルを指定
+#   - 以下は my-remote という prefix でリモートタスクファイルを設定
+#
+includes:
+  my-remote:
+    taskfile: https://raw.githubusercontent.com/devlights/try-gotask/main/03.default-task/Taskfile.yml
+
+tasks:
+  default:
+    cmds:
+      #
+      # リモートタスクファイルに定義されているタスクを実行
+      #
+      - task: my-remote:hello
