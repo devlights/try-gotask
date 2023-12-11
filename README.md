@@ -33,6 +33,7 @@
 |25.run-cmd-on-windows|[README](25.run-cmd-on-windows/README.md)|[Taskfile.yml](25.run-cmd-on-windows/Taskfile.yml)|
 |26.global-taskfile|[README](26.global-taskfile/README.md)|[Taskfile.yml](26.global-taskfile/Taskfile.yml)|
 |27.run-interactive-cli-app|[README](27.run-interactive-cli-app/README.md)|[Taskfile.yml](27.run-interactive-cli-app/Taskfile.yml)|
+|28.remote-taskfile|[README](28.remote-taskfile/README.md)|[Taskfile.yml](28.remote-taskfile/Taskfile.yml)|
 
 
 ## Task (go-task) とは
