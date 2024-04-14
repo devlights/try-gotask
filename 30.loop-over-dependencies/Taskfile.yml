@@ -1,0 +1,27 @@
+# https://taskfile.dev
+
+version: "3"
+
+tasks:
+  default:
+    deps:
+      - for: ["32", "64"]
+        task: build
+        vars:
+          OPTION_CPU: '{{.ITEM}}'
+    cmds:
+      - task: show
+  build:
+    cmds:
+      - gcc -m{{.OPTION_CPU}} -g -Wall -o main{{.OPTION_CPU}}.o -c main.c
+      - gcc -m{{.OPTION_CPU}} -g -Wall -o app{{.OPTION_CPU}} main{{.OPTION_CPU}}.o
+  show:
+    cmds:
+      - file ./app32
+      - file ./app64
+  clean:
+    cmds:
+      - rm *.o app*
+  install-libc32:
+    cmds:
+      - sudo apt-get install gcc-multilib
