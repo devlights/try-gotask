@@ -1,0 +1,27 @@
+# https://taskfile.dev
+
+version: "3"
+
+tasks:
+  default:
+    cmds:
+      - task: 32bit
+      - task: 64bit
+      - task: windowsonly
+      - task: linuxonly
+  32bit:
+    platforms: [linux/386]
+    cmds:
+      - echo 32bit
+  64bit:
+    platforms: [linux/amd64]
+    cmds:
+      - echo 64bit
+  windowsonly:
+    platforms: [ windows ]
+    cmds:
+      - echo windows
+  linuxonly:
+    platforms: [ linux ]
+    cmds:
+      - echo linux
