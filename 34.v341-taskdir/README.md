@@ -73,3 +73,8 @@ task: [call-subdir-taskfile] task -d "/workspace/try-gotask/34.v341-taskdir/subd
 task: [taskdir] echo "/workspace/try-gotask/34.v341-taskdir/subdir"
 /workspace/try-gotask/34.v341-taskdir/subdir                            # <-- 子のタスクファイルを直接実行した場合は、場所は子のタスクファイルの場所
 ```
+
+## 参考情報
+
+- https://taskfile.dev/changelog/#v3410---2025-01-18
+- https://github.com/go-task/task/issues/1959

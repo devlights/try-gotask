@@ -56,3 +56,8 @@ CHECKSUM=4031f2f73b02c59ceb876c1d6eaf70e4
 task: [default] echo "TIMESTAMP=2025-01-22 09:04:03.913762943 +0000 UTC"
 TIMESTAMP=2025-01-22 09:04:03.913762943 +0000 UTC
 ```
+
+## 参考情報
+
+- https://taskfile.dev/changelog/#v3410---2025-01-18
+- https://github.com/go-task/task/issues/1872
