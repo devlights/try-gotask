@@ -1,0 +1,17 @@
+# https://taskfile.dev
+
+version: '3'
+
+includes:
+  subdir: ./subdir
+
+tasks:
+  default:
+    cmds:
+      - task: call-self-taskdir
+      - task: subdir:taskdir
+      - task: call-subdir-taskfile
+  call-self-taskdir:
+      - echo "{{.TASK_DIR}}"
+  call-subdir-taskfile:
+      - task -d "{{.TASK_DIR}}/subdir" taskdir
