@@ -4,39 +4,43 @@
 
 ## リスト
 
-| directory                      | readme                                             | taskfile                                                    |
-| ------------------------------ | -------------------------------------------------- | ----------------------------------------------------------- |
-| 01.helloworld                  | [README](01.helloworld/README.md)                  | [Taskfile.yml](01.helloworld/Taskfile.yml)                  |
-| 02.cli-options                 | [README](02.cli-options/README.md)                 |                                                             |
-| 03.default-task                | [README](03.default-task/README.md)                | [Taskfile.yml](03.default-task/Taskfile.yml)                |
-| 04.env                         |                                                    | [Taskfile.yml](04.env/Taskfile.yml)                         |
-| 05.dotenv                      |                                                    | [Taskfile.yml](05.dotenv/Taskfile.yml)                      |
-| 06.include                     |                                                    | [Taskfile.yml](06.include/Taskfile.yml)                     |
-| 07.no-color                    | [README](07.no-color/README.md)                    | [Taskfile.yml](07.no-color/Taskfile.yml)                    |
-| 08.silent                      | [README](08.silent/README.md)                      | [Taskfile.yml](08.silent/Taskfile.yml)                      |
-| 09.os-specific                 |                                                    | [Taskfile.yml](09.os-specific/Taskfile.yml)                 |
-| 10.variable                    |                                                    | [Taskfile.yml](10.variable/Taskfile.yml)                    |
-| 11.cliargs                     | [README](11.cliargs/README.md)                     | [Taskfile.yml](11.cliargs/Taskfile.yml)                     |
-| 12.defer                       | [README](12.defer/README.md)                       | [Taskfile.yml](12.defer/Taskfile.yml)                       |
-| 13.internal-task               | [README](13.internal-task/README.md)               | [Taskfile.yml](13.internal-task/Taskfile.yml)               |
-| 14.shopt                       | [README](14.shopt/README.md)                       | [Taskfile.yml](14.shopt/Taskfile.yml)                       |
-| 15.single-command-task         | [README](15.single-command-task/README.md)         | [Taskfile.yml](15.single-command-task/Taskfile.yml)         |
-| 16.prompt                      | [README](16.prompt/README.md)                      | [Taskfile.yml](16.prompt/Taskfile.yml)                      |
-| 17.dryrun                      | [README](17.dryrun/README.md)                      | [Taskfile.yml](17.dryrun/Taskfile.yml)                      |
-| 18.preconditions               | [README](18.preconditions/README.md)               | [Taskfile.yml](18.preconditions/Taskfile.yml)               |
-| 19.loop-over-static-list       | [README](19.loop-over-static-list/README.md)       | [Taskfile.yml](19.loop-over-static-list/Taskfile.yml)       |
-| 20.loop-over-task-source       | [README](20.loop-over-task-source/README.md)       | [Taskfile.yml](20.loop-over-task-source/Taskfile.yml)       |
-| 21.loop-over-variables         | [README](21.loop-over-variables/README.md)         | [Taskfile.yml](21.loop-over-variables/Taskfile.yml)         |
-| 22.loop-rename-variables       | [README](22.loop-rename-variables/README.md)       | [Taskfile.yml](22.loop-rename-variables/Taskfile.yml)       |
-| 23.loop-over-task              | [README](23.loop-over-task/README.md)              | [Taskfile.yml](23.loop-over-task/Taskfile.yml)              |
-| 24.prevent-same-build          | [README](24.prevent-same-build/README.md)          | [Taskfile.yml](24.prevent-same-build/Taskfile.yml)          |
-| 25.run-cmd-on-windows          | [README](25.run-cmd-on-windows/README.md)          | [Taskfile.yml](25.run-cmd-on-windows/Taskfile.yml)          |
-| 26.global-taskfile             | [README](26.global-taskfile/README.md)             | [Taskfile.yml](26.global-taskfile/Taskfile.yml)             |
-| 27.run-interactive-cli-app     | [README](27.run-interactive-cli-app/README.md)     | [Taskfile.yml](27.run-interactive-cli-app/Taskfile.yml)     |
-| 28.remote-taskfile             | [README](28.remote-taskfile/README.md)             | [Taskfile.yml](28.remote-taskfile/Taskfile.yml)             |
-| 29.platform-specific-tasks     | [README](29.platform-specific-tasks/README.md)     | [Taskfile.yml](29.platform-specific-tasks/Taskfile.yml)     |
-| 30.loop-over-dependencies      | [README](30.loop-over-dependencies/README.md)      | [Taskfile.yml](30.loop-over-dependencies/Taskfile.yml)      |
-| 31.v338-cli_silent-cli_verbose | [README](31.v338-cli_silent-cli_verbose/README.md) | [Taskfile.yml](31.v338-cli_silent-cli_verbose/Taskfile.yml) |
+| directory                          | readme                                                 | taskfile                                                        |
+| ---------------------------------- | ------------------------------------------------------ | --------------------------------------------------------------- |
+| 01.helloworld                      | [README](01.helloworld/README.md)                      | [Taskfile.yml](01.helloworld/Taskfile.yml)                      |
+| 02.cli-options                     | [README](02.cli-options/README.md)                     |                                                                 |
+| 03.default-task                    | [README](03.default-task/README.md)                    | [Taskfile.yml](03.default-task/Taskfile.yml)                    |
+| 04.env                             |                                                        | [Taskfile.yml](04.env/Taskfile.yml)                             |
+| 05.dotenv                          |                                                        | [Taskfile.yml](05.dotenv/Taskfile.yml)                          |
+| 06.include                         |                                                        | [Taskfile.yml](06.include/Taskfile.yml)                         |
+| 07.no-color                        | [README](07.no-color/README.md)                        | [Taskfile.yml](07.no-color/Taskfile.yml)                        |
+| 08.silent                          | [README](08.silent/README.md)                          | [Taskfile.yml](08.silent/Taskfile.yml)                          |
+| 09.os-specific                     |                                                        | [Taskfile.yml](09.os-specific/Taskfile.yml)                     |
+| 10.variable                        |                                                        | [Taskfile.yml](10.variable/Taskfile.yml)                        |
+| 11.cliargs                         | [README](11.cliargs/README.md)                         | [Taskfile.yml](11.cliargs/Taskfile.yml)                         |
+| 12.defer                           | [README](12.defer/README.md)                           | [Taskfile.yml](12.defer/Taskfile.yml)                           |
+| 13.internal-task                   | [README](13.internal-task/README.md)                   | [Taskfile.yml](13.internal-task/Taskfile.yml)                   |
+| 14.shopt                           | [README](14.shopt/README.md)                           | [Taskfile.yml](14.shopt/Taskfile.yml)                           |
+| 15.single-command-task             | [README](15.single-command-task/README.md)             | [Taskfile.yml](15.single-command-task/Taskfile.yml)             |
+| 16.prompt                          | [README](16.prompt/README.md)                          | [Taskfile.yml](16.prompt/Taskfile.yml)                          |
+| 17.dryrun                          | [README](17.dryrun/README.md)                          | [Taskfile.yml](17.dryrun/Taskfile.yml)                          |
+| 18.preconditions                   | [README](18.preconditions/README.md)                   | [Taskfile.yml](18.preconditions/Taskfile.yml)                   |
+| 19.loop-over-static-list           | [README](19.loop-over-static-list/README.md)           | [Taskfile.yml](19.loop-over-static-list/Taskfile.yml)           |
+| 20.loop-over-task-source           | [README](20.loop-over-task-source/README.md)           | [Taskfile.yml](20.loop-over-task-source/Taskfile.yml)           |
+| 21.loop-over-variables             | [README](21.loop-over-variables/README.md)             | [Taskfile.yml](21.loop-over-variables/Taskfile.yml)             |
+| 22.loop-rename-variables           | [README](22.loop-rename-variables/README.md)           | [Taskfile.yml](22.loop-rename-variables/Taskfile.yml)           |
+| 23.loop-over-task                  | [README](23.loop-over-task/README.md)                  | [Taskfile.yml](23.loop-over-task/Taskfile.yml)                  |
+| 24.prevent-same-build              | [README](24.prevent-same-build/README.md)              | [Taskfile.yml](24.prevent-same-build/Taskfile.yml)              |
+| 25.run-cmd-on-windows              | [README](25.run-cmd-on-windows/README.md)              | [Taskfile.yml](25.run-cmd-on-windows/Taskfile.yml)              |
+| 26.global-taskfile                 | [README](26.global-taskfile/README.md)                 | [Taskfile.yml](26.global-taskfile/Taskfile.yml)                 |
+| 27.run-interactive-cli-app         | [README](27.run-interactive-cli-app/README.md)         | [Taskfile.yml](27.run-interactive-cli-app/Taskfile.yml)         |
+| 28.remote-taskfile                 | [README](28.remote-taskfile/README.md)                 | [Taskfile.yml](28.remote-taskfile/Taskfile.yml)                 |
+| 29.platform-specific-tasks         | [README](29.platform-specific-tasks/README.md)         | [Taskfile.yml](29.platform-specific-tasks/Taskfile.yml)         |
+| 30.loop-over-dependencies          | [README](30.loop-over-dependencies/README.md)          | [Taskfile.yml](30.loop-over-dependencies/Taskfile.yml)          |
+| 31.v338-cli_silent-cli_verbose     | [README](31.v338-cli_silent-cli_verbose/README.md)     | [Taskfile.yml](31.v338-cli_silent-cli_verbose/Taskfile.yml)     |
+| 32.joinpath                        | [README](32.joinpath/README.md)                        | [Taskfile.yml](32.joinpath/Taskfile.yml)                        |
+| 33.completion-flag                 | [README](33.completion-flag/README.md)                 | [Taskfile.yml](33.completion-flag/Taskfile.yml)                 |
+| 34.v341-taskdir                    | [README](34.v341-taskdir/README.md)                    | [Taskfile.yml](34.v341-taskdir/Taskfile.yml)                    |
+| 35.v341-checksum-timestamp-in-cmds | [README](35.v341-checksum-timestamp-in-cmds/README.md) | [Taskfile.yml](35.v341-checksum-timestamp-in-cmds/Taskfile.yml) |
 
 ## Task (go-task) とは
 
