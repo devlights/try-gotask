@@ -5,6 +5,7 @@ version: '3'
 tasks:
   default:
     cmds:
+      - cmd: echo "{{.CLI_ARGS_LIST}}"
       - for: { var: CLI_ARGS_LIST, as: V }
         cmd: echo "{{.V}}"
     silent: true

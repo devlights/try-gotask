@@ -8,6 +8,7 @@
 
 ```sh
 $ task -- hello world へろー わーるど
+[hello world へろー わーるど]
 hello
 world
 へろー
