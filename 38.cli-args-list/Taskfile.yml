@@ -1,0 +1,10 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  default:
+    cmds:
+      - for: { var: CLI_ARGS_LIST, as: V }
+        cmd: echo "{{.V}}"
+    silent: true
