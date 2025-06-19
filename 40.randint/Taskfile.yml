@@ -1,0 +1,9 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  default:
+    cmds:
+      - echo "{{randInt}}"      # math/rand/v2.Int()が呼び出される
+      - echo "{{randIntN 10}}"  # math/rand/v2.IntN()が呼び出される
