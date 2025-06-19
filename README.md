@@ -41,6 +41,11 @@
 | 33.completion-flag                 | [README](33.completion-flag/README.md)                 | [Taskfile.yml](33.completion-flag/Taskfile.yml)                 |
 | 34.v341-taskdir                    | [README](34.v341-taskdir/README.md)                    | [Taskfile.yml](34.v341-taskdir/Taskfile.yml)                    |
 | 35.v341-checksum-timestamp-in-cmds | [README](35.v341-checksum-timestamp-in-cmds/README.md) | [Taskfile.yml](35.v341-checksum-timestamp-in-cmds/Taskfile.yml) |
+| 36.v342-init-option                | [README](36.v342-init-option/README.md)                | [Taskfile.yml](36.v342-init-option/Taskfile.yml)                |
+| 37.taskfile-for-c                  | [README](37.taskfile-for-c/README.md)                  |                                                                 |
+| 38.cli-args-list                   | [README](38.cli-args-list/README.md)                   | [Taskfile.yml](38.cli-args-list/Taskfile.yml)                   |
+| 39.uuid                            | [README](39.uuid/README.md)                            | [Taskfile.yml](39.uuid/Taskfile.yml)                            |
+| 40.randint                         | [README](40.randint/README.md)                         | [Taskfile.yml](40.randint/Taskfile.yml)                         |
 
 ## Task (go-task) とは
 
