@@ -46,6 +46,7 @@
 | 38.cli-args-list                   | [README](38.cli-args-list/README.md)                   | [Taskfile.yml](38.cli-args-list/Taskfile.yml)                   |
 | 39.uuid                            | [README](39.uuid/README.md)                            | [Taskfile.yml](39.uuid/Taskfile.yml)                            |
 | 40.randint                         | [README](40.randint/README.md)                         | [Taskfile.yml](40.randint/Taskfile.yml)                         |
+| 41.common_core_utility             | [README](41.randintcommon_core_utility/README.md)      | [Taskfile.yml](41.common_core_utility/Taskfile.yml)             |
 
 ## Task (go-task) とは
 

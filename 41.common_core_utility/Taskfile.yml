@@ -1,0 +1,17 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  default:
+    cmds:
+      - task: run
+      - defer: rm -rf a
+  run:
+    cmds:
+      #
+      # 以下のコマンドが Windows/Linux 両方で動くようになった
+      #
+      - mkdir -p a/b/c
+      - touch a/data1.txt
+      - cp a/data1.txt a/b/c/data2.txt
