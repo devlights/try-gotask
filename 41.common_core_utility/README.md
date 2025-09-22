@@ -2,7 +2,7 @@
 
 [Announcing Built-in Core Utilities for Windows](https://taskfile.dev/blog/windows-core-utils) にて、アナウンスされた機能。
 
-v.3.45にて、Linuxなどと同様に以下のコマンドをタスクファイルに記載することが出来るようになった。
+v.3.45にて、Linuxなどと同様に以下のコマンドをWindowsでもタスクファイルに記載することが出来るようになった。
 
 - base64
 - cat
