@@ -1,0 +1,16 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  mytask:*:
+    vars:
+      VALUE1: '{{index .MATCH 0}}'
+    cmds:
+      - echo "value is '{{.VALUE1}}'"
+  mytask-n:*:*:
+    vars:
+      VALUE1: '{{index .MATCH 0}}'
+      VALUE2: '{{index .MATCH 1}}'
+    cmds:
+      - echo "values are '{{.VALUE1}}' and '{{.VALUE2}}'"
